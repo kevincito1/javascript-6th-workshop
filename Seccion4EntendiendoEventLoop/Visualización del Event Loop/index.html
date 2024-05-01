@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización del Event Loop</title>
+</head>
+<body>
+
+    <video src="./funcionamiento event loop.webm" controls height="600px" width="900px"></video>
+    
+    <!-- - ¿Qué tareas se consideran macrotareas y cuáles son microtareas?
+        R// Macrotareas = los setTimeOut
+            Microtareas = las promesas
+    - ¿Cómo se relacionan las macrotareas y microtareas con el event loop?
+        R// Tanto las microtareas como las macrotareas entran al eventloop según como hayan sido escritas en el codigo, la forma en que trabajan en el event loop es que las microtareas seran las primeras en resolverse y cuando el stack de las microtareas este vacio, se empezaran a resolver las macrotareas.
+    - ¿Qué sucede cuando una microtarea genera una nueva macrotarea dentro de ella?
+        R// Si al momento de ejecutar la microtarea esta genera una macrotarea, esta se enlistara en el stack de macrotareas y se resolvera cuando esta sea la primera en la cola, queriendo decir con esto que primero se resolveran las macrotareas que estaban en el stack.
+    - ¿Cómo se manejan las promesas y los setTimeout en relación con el event loop?
+        R// Las promesas son tratadas como una microtarea y los setTimeOut como macrotareas, queriendo decir con esto que primero se resolveran las microtareas y luego las macrotareas. -->
+</body>
+</html>
